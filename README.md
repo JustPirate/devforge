@@ -1,69 +1,81 @@
-# 🌙 My Hyprland Dotfiles
+# DevForge — Hyprland Linux Environment
 
-A clean, productive, and slightly sarcastic Hyprland setup.
+A personal Linux desktop environment built around Hyprland, with custom configuration, scripts, shortcuts, power controls, and workflow-focused tooling.
 
-## 🚀 Components
+## Overview
 
-- **Window Manager:** [Hyprland](https://hyprland.org/) (with NVIDIA optimizations)
-- **Shell:** [Fish](https://fishshell.com/) (Custom prompt + funny startup messages)
-- **Terminal:** [Kitty](https://sw.kovidgoyal.net/kitty/)
-- **Status Bar:** [Waybar](https://github.com/Alexays/Waybar) (Full & Compact modes)
-- **Launcher:** [Fuzzel](https://codeberg.org/dnkl/fuzzel)
-- **Logout Menu:** [wleave](https://github.com/C-Aniruddh/wleave)
-- **Notifications:** [Dunst](https://dunst-project.org/)
-- **Idle Daemon:** [Hypridle](https://github.com/hyprwm/hypridle)
-- **Wallpaper:** [swww](https://github.com/L_S_X/swww)
-- **File Manager:** Thunar
+DevForge is a reproducible collection of Linux desktop configuration designed to make a Hyprland workstation fast, focused, and practical for software development.
 
-## 🛠️ Features & Scripts
+The repository combines window-manager configuration with shell customization, status-bar workflows, application launching, notifications, screenshots, and power/performance controls.
 
-These dotfiles include custom scripts for a better workflow:
+## Components
 
-- **📊 Bar Toggle:** Quickly switch between a `full` and `compact` Waybar layout.
-- **󰿢 Grayscale Mode:** Toggle a grayscale shader for focus or late-night sessions.
-- **⚡ Power Mode:** Toggle animations and blur to save battery or boost performance.
-- **🤡 Sassy Shell:** A Fish shell prompt that reacts to your commands (and judges you when they fail).
+| Component | Role |
+|---|---|
+| Hyprland | Wayland window manager |
+| Fish | Interactive shell |
+| Kitty | Terminal |
+| Waybar | Status bar |
+| Fuzzel | Application launcher |
+| wleave | Logout menu |
+| Dunst | Notifications |
+| Hypridle | Idle management |
+| swww | Wallpaper management |
+| Thunar | File manager |
 
-## ⌨️ Keybindings
+## Features
 
-The `SUPER` (Windows) key is the main modifier.
+- Full and compact Waybar modes
+- Custom Fish shell prompt and startup messages
+- Grayscale shader toggle
+- Power/performance mode for reducing animations and blur
+- Custom keyboard-driven application workflow
+- Screenshot shortcuts for full-screen and region capture
+- NVIDIA-oriented Hyprland configuration
+
+## Keybindings
 
 | Keybind | Action |
-| --- | --- |
-| `SUPER + T` | Open Kitty Terminal |
-| `SUPER + Space` | App Launcher (Fuzzel) |
-| `SUPER + ESC` | Logout Menu (wleave) |
-| `SUPER + Q` | Kill Active Window |
-| `SUPER + W` | Open Brave Browser |
+|---|---|
+| `SUPER + T` | Open Kitty |
+| `SUPER + Space` | Open Fuzzel |
+| `SUPER + ESC` | Open logout menu |
+| `SUPER + Q` | Close active window |
+| `SUPER + W` | Open browser |
 | `SUPER + C` | Open VS Code |
-| `SUPER + E` | Open File Manager (Thunar) |
-| `SUPER + F` | Toggle Floating |
-| `PrintScreen` | Full Screenshot (Save + Clipboard) |
-| `Shift + PrintScreen` | Region Screenshot (Clipboard) |
+| `SUPER + E` | Open Thunar |
+| `SUPER + F` | Toggle floating |
+| `PrintScreen` | Full screenshot |
+| `Shift + PrintScreen` | Region screenshot |
 
-## 📦 Installation
+## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/vijaygovindBiju/devforge.git ~/dotfiles
-   ```
-2. Symlink the configurations to `~/.config/`:
-   ```bash
-   ln -s ~/dotfiles/hypr ~/.config/hypr
-   ln -s ~/dotfiles/waybar ~/.config/waybar
-   ln -s ~/dotfiles/fish ~/.config/fish
-   # ... and so on for other directories
-   ```
-3. Make sure to install the required fonts located in `hypr/Fonts/`.
+Clone the repository:
 
-## 🎨 Screenshots
-Home
-![alt text](image.png)
-power menu
-![alt text](image-2.png)
-shell
-![alt text](image-1.png)
-waybar
-![alt text](image-3.png)
----
-*Built with ❤️ and a lot of trial & error.*
+```bash
+git clone https://github.com/vijaygovindBiju/devforge.git ~/dotfiles
+```
+
+Review the configuration before linking it into `~/.config`, then create the required symlinks for the components you want to use:
+
+```bash
+ln -s ~/dotfiles/hypr ~/.config/hypr
+ln -s ~/dotfiles/waybar ~/.config/waybar
+ln -s ~/dotfiles/fish ~/.config/fish
+```
+
+Install the required fonts from `hypr/Fonts/` and ensure the applications listed above are installed on your system.
+
+> Configuration paths and application names are intentionally documented here rather than using an automated installer, so the setup can be adapted safely to another machine.
+
+## Screenshots
+
+The repository includes screenshots showing the desktop, power menu, shell, and Waybar configuration.
+
+## Engineering Notes
+
+This project is primarily configuration and shell scripting rather than a traditional application. Its value is in automation, reproducible workstation setup, Linux tooling, and maintaining a coherent developer workflow.
+
+## License
+
+Personal configuration project. Use and adapt the configuration at your own discretion.
