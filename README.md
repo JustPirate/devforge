@@ -53,7 +53,7 @@ The repository combines window-manager configuration with shell customization, s
 Clone the repository:
 
 ```bash
-git clone https://github.com/vijaygovindBiju/devforge.git ~/dotfiles
+git clone https://github.com/JustPirate/devforge.git ~/dotfiles
 ```
 
 Review the configuration before linking it into `~/.config`, then create the required symlinks for the components you want to use:
